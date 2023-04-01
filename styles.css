@@ -1,0 +1,140 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)),
+        url(/src/img/pexels-alex-green-5699456.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    padding: 0 0 1em 0;
+}
+
+h1 {
+    margin: 1em auto 0 0;
+    text-align: center;
+}
+
+p {
+    margin: 1em 0 0 0;
+    font-weight: 800;
+}
+
+p#description {
+    text-align: center;
+    font-weight: 100;
+    margin: 0;
+}
+
+form {
+    background: var(--color-darkblue-alpha);
+    /* width: 60vw; */
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2.5em;
+    border-radius: 0.25rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0 0 0 5px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0.5rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.input-checkbox {
+    min-width: 1.25rem;
+    max-width: 1.25rem;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 1.15em;
+    max-height: 1.5rem;
+}
+
+input,
+textarea {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    /* padding: 0.6rem 0 0 0.6rem; */
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    /* padding: 0.75rem 0 0.75rem 0; */
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+a {
+    color: #dfdfe2;
+}

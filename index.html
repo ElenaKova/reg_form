@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>
+    </header>
+    <form id="survey-form" method="post">
+        <fieldset>
+            <label for="first-name">Name <input class="form-control" id="first-name" name="first-name" type="text"
+                    required placeholder="Enter your name" /></label>
+            <label for="last-name">Surname<input class="form-control" id="last-name" name="last-name" type="text"
+                    required placeholder="Enter your surname" /></label>
+            <label for="email">Email<input class="form-control" id="email" name="email" type="email" required
+                    placeholder="Enter your email" /></label>
+            <label for="age">Age (optional): <input class="form-control" id="age" type="number" name="age" min="13"
+                    max="120" placeholder="Age" /></label>
+            <label for="referrer">
+                <p> Which option best describes your current role?</p>
+                <select class="form-control" id="referrer" name="referrer">
+                    <option value="" selected>(select one)</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learning</option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Would you recommend "name of course" to a friend?</p>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type"
+                    class="inline" /> Definitely</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type"
+                    class="inline" /> Maybe</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type"
+                    class="inline" /> Not sure</label>
+        </fieldset>
+        <fieldset>
+            <label for="referrer">
+                <p> What is your favorite feature of "name of course"?</p>
+                <select class="form-control" id="referrer" name="referrer">
+                    <option value="" selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </label>
+            <label for="referrer">
+                <p> What would you like to see improved? <span>(Check all that apply)</span></p>
+                <label>
+                    <input class="input-checkbox" value="frontend" type="checkbox" required name="frontEnd"
+                        class="inline" />
+                    Front-end Projects</label>
+                <label>
+                    <input class="input-checkbox" value="backend" type="checkbox" required name="backEnd"
+                        class="inline" />
+                    Back-end Projects</label>
+                <label>
+                    <input class="input-checkbox" value="datavisualization" type="checkbox" required
+                        name="dataVisualization" class="inline" />
+                    Data Visualization</label>
+                <label>
+                    <input class="input-checkbox" value="challenges" type="checkbox" required name="challenges"
+                        class="inline" />
+                    Challenges</label>
+                <label>
+                    <input class="input-checkbox" value="open-source-community" type="checkbox" required
+                        name="openSourceCommunity" class="inline" />
+                    Open Source Community</label>
+                <label>
+                    <input class="input-checkbox" value="gitter-help-rooms" type="checkbox" required
+                        name="gitterHelpRooms" class="inline" />
+                    Gitter help rooms</label>
+                <label>
+                    <input class="input-checkbox" value="videos" type="checkbox" required name="Videos"
+                        class="inline" />
+                    Videos</label>
+                <label>
+                    <input class="input-checkbox" value="city-meetups" type="checkbox" required name="cityMeetups"
+                        class="inline" />
+                    City Meetups</label>
+                <label>
+                    <input class="input-checkbox" value="wiki" type="checkbox" required name="wiki" class="inline" />
+                    Wiki</label>
+                <label>
+                    <input class="input-checkbox" value="forum" type="checkbox" required name="forum" class="inline" />
+                    Forum</label>
+                <label>
+                    <input class="input-checkbox" value="additional-courses" type="checkbox" required
+                        name="additionalCourses" class="inline" />
+                    Additional Courses</label>
+            </label>
+            <label for="bio">
+                <p> Any commnts of suggestions</p>
+                <textarea name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <footer>
+                <input type="submit" value="Submit" />
+        </footer>
+    </form>
+</body>
+
+</html>
